@@ -1,0 +1,28 @@
+﻿<Window x:Class="FlowDocDummy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="287*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Click="ApplyFormatClick">ApplyFormat</Button>
+            <TextBlock x:Name="Time"/>
+        </StackPanel>
+
+        <RichTextBox x:Name="Rtb" Grid.Row="1">
+            <RichTextBox.Document>
+                <FlowDocument>
+                    <Paragraph>
+                        <Run>
+                            The zero-width space (ZWSP) is a non-printing character used in computerized typesetting to indicate word boundaries to text processing systems when using scripts that do not use explicit spacing, or after characters (such as the slash) that are not followed by a visible space but after which there may nevertheless be a line break. Normally, it is not a visible separation, but it may expand in passages that are fully justified. Usage In HTML pages, the zero-width space can be used as a potential line-break in long words as an alternative to the
+                            tag. However, the zero-width spac
+                        </Run>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox.Document>
+        </RichTextBox>
+    </Grid>
+</Window>
